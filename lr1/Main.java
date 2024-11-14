@@ -34,3 +34,4 @@ public class Main {
         System.out.println("\nСредняя цена блюд с калорийностью более 300: " + averagePrice);
     }
 }
+}
