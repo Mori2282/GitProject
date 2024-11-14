@@ -26,7 +26,7 @@ public abstract class Dish {
     }
 
     public boolean isVeganFriendly() {
-        return isVeganFriendly;
+        return isVeganFriendly;;
     }
 
     @Override
