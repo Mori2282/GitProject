@@ -1,11 +1,11 @@
-import library.*;
+package library;
 
 public class Main {
     public static void main(String[] args) {
         // Создаем меню
         Menu menu = new Menu();
 
-        // Добавляем 10 различных блюд
+        // Добавляем блюда
         menu.addDish(new Drink("Coca Cola", 1.50, 150, false));
         menu.addDish(new Drink("Orange Juice", 2.00, 120, true));
         menu.addDish(new Drink("Water", 1.00, 0, true));
@@ -17,7 +17,7 @@ public class Main {
         menu.addDish(new Toast("Ham Toast", 4.50, 500, false));
         menu.addDish(new Toast("Egg Toast", 4.00, 300, false));
 
-        // Выводим все блюда в меню
+        // Выводим все блюда
         System.out.println("Все блюда:");
         for (Dish dish : menu.getAllDishes()) {
             System.out.println(dish);
