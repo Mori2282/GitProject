@@ -5,3 +5,4 @@ public class Drink extends Dish {
         super(name, price, calories, isVeganFriendly);
     }
 }
+}

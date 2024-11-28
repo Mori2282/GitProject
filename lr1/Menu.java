@@ -11,7 +11,7 @@ public class Menu {
     }
 
     public void addDish(Dish dish) {
-        dishes.add(dish);
+        dishes.add(dish);;
     }
 
     public List<Dish> getAllDishes() {
