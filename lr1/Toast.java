@@ -1,4 +1,4 @@
-package library;
+package lr1;
 
 public class Toast extends Dish {
     public Toast(String name, double price, int calories, boolean isVeganFriendly) {

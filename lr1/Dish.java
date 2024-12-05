@@ -1,18 +1,18 @@
-package library;
+package lr1;
 
-public abstract class Dish {
+public class Dish {
     private String name;
     private double price;
     private int calories;
-    private boolean isVeganFriendly;
 
-    public Dish(String name, double price, int calories, boolean isVeganFriendly) {
+    // Конструктор с тремя параметрами
+    public Dish(String name, double price, int calories) {
         this.name = name;
         this.price = price;
         this.calories = calories;
-        this.isVeganFriendly = isVeganFriendly;
     }
 
+    // Геттеры
     public String getName() {
         return name;
     }
@@ -25,12 +25,16 @@ public abstract class Dish {
         return calories;
     }
 
-    public boolean isVeganFriendly() {
-        return isVeganFriendly;;
+    // Сеттеры
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Блюдо: " + name + ", Цена: " + price + ", Калории: " + calories + ", Vegan Friendly: " + isVeganFriendly;
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setCalories(int calories) {
+        this.calories = calories;
     }
 }
